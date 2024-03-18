@@ -1,0 +1,17 @@
+<!-- views/home.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Dynamic Page</title>
+</head>
+<body>
+    <a href="/update">update</a>
+    <ul>
+        <% rows.forEach(function(row){ %>
+            <% if ( row.length ) { %>
+                <li><%= row.join(' ') %></li>
+            <% } %>
+        <% }); %>
+    </ul>
+</body>
+</html>
